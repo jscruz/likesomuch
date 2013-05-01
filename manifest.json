@@ -16,5 +16,8 @@
       "matches": ["*://*.facebook.com/*"],
       "js": ["likesomuch.js"]
     }
-  ]
+  ],
+  "web_accessible_resources": [
+	"injectedScript.js"
+	]
 }
