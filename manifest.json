@@ -1,0 +1,20 @@
+{
+	"name": "I Like So Much",
+	"version": "1.0",
+	"manifest_version": 2,
+	"description": "Tune your Facebook timeline changing the Like links with Like So Much",
+	"icons":{
+		"16":"16.png",
+		"48":"48.png",
+		"128":"128.png"
+	},
+	"permissions": [
+		"tabs", "http://*/*", "https://*/*"
+	],
+	"content_scripts": [
+    {
+      "matches": ["*://*.facebook.com/*"],
+      "js": ["likesomuch.js"]
+    }
+  ]
+}
